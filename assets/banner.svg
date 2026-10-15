@@ -1,0 +1,202 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0b1e" />
+      <stop offset="50%" stop-color="#12183a" />
+      <stop offset="100%" stop-color="#050716" />
+    </linearGradient>
+
+    <!-- Mesh Gradient Accent -->
+    <radialGradient id="glow-cyan" cx="15%" cy="30%" r="50%">
+      <stop offset="0%" stop-color="#00f2fe" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#00f2fe" stop-opacity="0" />
+    </radialGradient>
+
+    <radialGradient id="glow-purple" cx="85%" cy="70%" r="50%">
+      <stop offset="0%" stop-color="#7f00ff" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#7f00ff" stop-opacity="0" />
+    </radialGradient>
+
+    <radialGradient id="sphere-glow" cx="40%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#00ffff" />
+      <stop offset="50%" stop-color="#4facfe" />
+      <stop offset="100%" stop-color="#000839" />
+    </radialGradient>
+
+    <linearGradient id="text-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f2fe" />
+      <stop offset="50%" stop-color="#4facfe" />
+      <stop offset="100%" stop-color="#a18cd1" />
+    </linearGradient>
+
+    <linearGradient id="badge-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff0844" />
+      <stop offset="100%" stop-color="#ffb199" />
+    </linearGradient>
+
+    <style>
+      .title {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+        font-weight: 800;
+        font-size: 52px;
+        fill: url(#text-grad);
+        letter-spacing: -0.5px;
+      }
+      .subtitle {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+        fill: #e2e8f0;
+        letter-spacing: 0.2px;
+      }
+      .tag {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, monospace;
+        font-weight: 600;
+        font-size: 13px;
+        fill: #38bdf8;
+      }
+      .grid-line {
+        stroke: #334155;
+        stroke-opacity: 0.25;
+        stroke-width: 1;
+      }
+      .wire-poly {
+        fill: none;
+        stroke: #38bdf8;
+        stroke-width: 1.5;
+        stroke-opacity: 0.45;
+      }
+      .floating-node {
+        fill: #00f2fe;
+      }
+      
+      /* Dynamic Animations */
+      @keyframes floatSlow {
+        0%, 100% { transform: translateY(0px) rotate(0deg); }
+        50% { transform: translateY(-12px) rotate(3deg); }
+      }
+      @keyframes floatFast {
+        0%, 100% { transform: translateY(0px) rotate(0deg); }
+        50% { transform: translateY(14px) rotate(-4deg); }
+      }
+      @keyframes pulseGlow {
+        0%, 100% { opacity: 0.35; transform: scale(1); }
+        50% { opacity: 0.65; transform: scale(1.08); }
+      }
+      @keyframes orbit {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+      @keyframes gridShift {
+        0% { stroke-dashoffset: 0; }
+        100% { stroke-dashoffset: 60; }
+      }
+      
+      .animated-cube {
+        animation: floatSlow 7s ease-in-out infinite;
+        transform-origin: 980px 180px;
+      }
+      .animated-torus {
+        animation: floatFast 9s ease-in-out infinite;
+        transform-origin: 1060px 100px;
+      }
+      .animated-glow {
+        animation: pulseGlow 5s ease-in-out infinite;
+      }
+      .animated-grid {
+        stroke-dasharray: 6 6;
+        animation: gridShift 20s linear infinite;
+      }
+    </style>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="100%" height="100%" fill="url(#bg-grad)" rx="16" />
+
+  <!-- Ambient Glows -->
+  <rect width="100%" height="100%" fill="url(#glow-cyan)" rx="16" />
+  <rect width="100%" height="100%" fill="url(#glow-purple)" rx="16" />
+
+  <!-- 3D Perspective Grid in Background -->
+  <g opacity="0.3" class="animated-grid">
+    <line x1="0" y1="280" x2="1200" y2="280" class="grid-line" stroke-width="1.2" />
+    <line x1="0" y1="305" x2="1200" y2="305" class="grid-line" stroke-width="1.5" />
+    <line x1="0" y1="335" x2="1200" y2="335" class="grid-line" stroke-width="2" />
+    <line x1="600" y1="260" x2="100" y2="360" class="grid-line" stroke-width="1.2" />
+    <line x1="600" y1="260" x2="350" y2="360" class="grid-line" stroke-width="1.2" />
+    <line x1="600" y1="260" x2="600" y2="360" class="grid-line" stroke-width="1.5" />
+    <line x1="600" y1="260" x2="850" y2="360" class="grid-line" stroke-width="1.2" />
+    <line x1="600" y1="260" x2="1100" y2="360" class="grid-line" stroke-width="1.2" />
+  </g>
+
+  <!-- Dynamic Geometric 3D Polyhedra (Placed safely on the right side) -->
+  <g class="animated-cube">
+    <!-- Isometric 3D Wireframe Icosahedron / Crystal -->
+    <polygon points="980,100 1060,145 1060,240 980,285 900,240 900,145" class="wire-poly" stroke="#7f00ff" stroke-width="2" />
+    <polygon points="980,100 980,285" class="wire-poly" stroke="#00f2fe" stroke-width="1.5" />
+    <polygon points="900,145 1060,240" class="wire-poly" stroke="#4facfe" stroke-width="1.2" />
+    <polygon points="900,240 1060,145" class="wire-poly" stroke="#4facfe" stroke-width="1.2" />
+    <polygon points="980,100 940,192 980,285 1020,192" fill="#00f2fe" fill-opacity="0.08" class="wire-poly" stroke="#00f2fe" />
+    
+    <!-- Coordinate Vertices -->
+    <circle cx="980" cy="100" r="4.5" class="floating-node" />
+    <circle cx="1060" cy="145" r="4" class="floating-node" fill="#7f00ff" />
+    <circle cx="1060" cy="240" r="4.5" class="floating-node" />
+    <circle cx="980" cy="285" r="5" class="floating-node" fill="#a18cd1" />
+    <circle cx="900" cy="240" r="4" class="floating-node" fill="#00f2fe" />
+    <circle cx="900" cy="145" r="4.5" class="floating-node" fill="#7f00ff" />
+    <circle cx="980" cy="192" r="6" class="floating-node" fill="#38bdf8" />
+  </g>
+
+  <!-- Floating Dynamic Satellite Elements -->
+  <g class="animated-torus">
+    <ellipse cx="1060" cy="90" rx="35" ry="14" fill="none" stroke="#f43f5e" stroke-width="1.8" opacity="0.6" transform="rotate(-25 1060 90)" />
+    <circle cx="1080" cy="85" r="3.5" fill="#f43f5e" />
+  </g>
+
+  <!-- Pulsing Shaders Sphere -->
+  <g class="animated-glow">
+    <circle cx="850" cy="130" r="22" fill="url(#sphere-glow)" opacity="0.8" />
+    <ellipse cx="850" cy="130" rx="36" ry="10" fill="none" stroke="#00f2fe" stroke-width="1" stroke-dasharray="3 3" transform="rotate(20 850 130)" />
+  </g>
+
+  <!-- Foreground Content: Title & Badges (Completely clear, unblocked) -->
+  <g transform="translate(80, 0)">
+    <!-- Category Pill -->
+    <g transform="translate(0, 68)">
+      <rect width="260" height="30" rx="15" fill="#1e293b" stroke="#334155" stroke-width="1" />
+      <circle cx="16" cy="15" r="5" fill="#10b981" />
+      <text x="32" y="20" class="tag">REAL-TIME 3D &amp; WEB GRAPHICS</text>
+    </g>
+
+    <!-- Main Title -->
+    <text x="0" y="160" class="title">Awesome 3D Graphics &amp; WebGL</text>
+
+    <!-- Subtitle -->
+    <text x="0" y="208" class="subtitle">Curated directory of engines, WebGPU pipelines, modeling suites &amp; tools</text>
+
+    <!-- Highlighted Spec Pills -->
+    <g transform="translate(0, 245)">
+      <!-- Pill 1 -->
+      <rect x="0" y="0" width="105" height="34" rx="8" fill="#1e293b" opacity="0.85" stroke="#38bdf8" stroke-width="1.2" />
+      <text x="52" y="22" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="600" fill="#38bdf8">WebGL 2.0</text>
+
+      <!-- Pill 2 -->
+      <rect x="118" y="0" width="100" height="34" rx="8" fill="#1e293b" opacity="0.85" stroke="#a855f7" stroke-width="1.2" />
+      <text x="168" y="22" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="600" fill="#c084fc">WebGPU</text>
+
+      <!-- Pill 3 -->
+      <rect x="231" y="0" width="98" height="34" rx="8" fill="#1e293b" opacity="0.85" stroke="#10b981" stroke-width="1.2" />
+      <text x="280" y="22" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="600" fill="#34d399">Three.js</text>
+
+      <!-- Pill 4 -->
+      <rect x="342" y="0" width="98" height="34" rx="8" fill="#1e293b" opacity="0.85" stroke="#f59e0b" stroke-width="1.2" />
+      <text x="391" y="22" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="600" fill="#fbbf24">Blender</text>
+
+      <!-- Pill 5 -->
+      <rect x="453" y="0" width="92" height="34" rx="8" fill="#1e293b" opacity="0.85" stroke="#ec4899" stroke-width="1.2" />
+      <text x="499" y="22" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="600" fill="#f472b6">Godot</text>
+    </g>
+  </g>
+</svg>
