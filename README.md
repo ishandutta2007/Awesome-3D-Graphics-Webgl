@@ -28,75 +28,30 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 
 ## Table of Contents
 
+- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
 - [SaaS/Hosted Platforms](#saas-products)
-
 - [Open-Source GitHub Projects](#open-source-github-projects)
-
 - [How to Contribute](#how-to-contribute)
-
 - [Disclaimer](#disclaimer)
 
+## Sector Overview & Market Dynamics
 
+The global 3D graphics, rendering, and real-time visualization software market is estimated at approximately $3.5B to $5.2B (with the broader 3D CAD/animation ecosystem exceeding $25B) and is growing at an estimated CAGR of 20–25%. The market exhibits moderate to high concentration at the enterprise tier dominated by entrenched platform giants (NVIDIA, Autodesk, Epic Games, Unity), paired with functional fragmentation across specialized workflows, niche DCC plugins, and an increasingly disruptive, open-source core tier (Blender, Godot, three.js).
 
 ## SaaS/Hosted Platforms
 
-- **[Unity](https://unity.com/)**  
+<a id="saas-products"></a>
 
-  Leading real-time 3D platform used for games, simulations, and interactive experiences across desktop, mobile, consoles, and WebGL export, with extensive asset store and cloud services.
-
-
-
-- **[Unreal Engine (Epic Games)](https://www.unrealengine.com/)**  
-
-  High-fidelity real-time 3D engine from Epic Games, renowned for cinematic quality, Blueprint visual scripting, and strong support for games, film, and enterprise visualization.
-
-
-
-- **[Autodesk Maya](https://www.autodesk.com/products/maya/overview)**  
-
-  Industry-standard 3D modeling, animation, and rendering software widely used in film, TV, and game production pipelines.
-
-
-
-- **[Blender Cloud / Blender Studio services](https://cloud.blender.org/)**  
-
-  Commercial cloud and production services built around the open-source Blender ecosystem (training, assets, collaborative features).
-
-
-
-- **[NVIDIA Omniverse](https://www.nvidia.com/en-us/omniverse/)**  
-
-  Platform for building and operating metaverse applications, digital twins, and collaborative 3D workflows with USD, RTX rendering, and AI integration.
-
-
-
-- **[Godot Cloud / commercial Godot offerings](https://godotengine.org/)**  
-
-  Hosted or commercially supported services and tools layered on the open-source Godot engine.
-
-
-
-- **[CryEngine](https://www.cryengine.com/)**  
-
-  Real-time engine known for high-end visuals, used in games and simulations, with both free and commercial licensing options.
-
-
-
-- **[Amazon Lumberyard / Open 3D Engine heritage](https://www.o3de.org/)**  
-
-  Originally Amazon’s game engine (Lumberyard); its open-source successor continues as O3DE, while related AWS game services remain commercial.
-
-
-
-- **[PlayCanvas](https://playcanvas.com/)**  
-
-  Web-first 3D engine and collaborative online editor optimized for browser games and interactive 3D; the engine core is open-source while the hosted editor and cloud services are commercial.
-
-
-
-- **[Other commercial 3D engines and DCC tools](https://www.autodesk.com/)**  
-
-  Additional proprietary modeling, rendering, and real-time platforms used in professional film, game, and enterprise pipelines.
+| Platform | Company Valuation / Revenue | Pricing (Starting Tier) | Free Tier Limits | Description |
+| :--- | :--- | :--- | :--- | :--- |
+| **[Amazon Lumberyard / AWS Game Tech](https://www.o3de.org/)** | ~$2.2T Market Cap / ~$107B AWS Rev | Pay-as-you-go AWS services (e.g. EC2 G4dn from $0.526/hr; engine core is free) | Free AWS tier: 12-month access to 750 hrs/month t2.micro/t3.micro + 5 GB S3 storage (O3DE engine source is 100% free under Apache 2.0) | Cloud infrastructure and backend gaming services evolved from Lumberyard; engine core transitioned to the open-source Open 3D Engine (O3DE). |
+| **[NVIDIA Omniverse](https://www.nvidia.com/en-us/omniverse/)** | ~$3.0T+ Market Cap / ~$120B+ Rev | $4,500/year per named user (Omniverse Enterprise / AI Enterprise subscription) | Free for individual developers and production development; access limited to community support (Discord/forums) without commercial enterprise SLAs. | Platform for building OpenUSD-based 3D applications, digital twins, and collaborative industrial metaverse pipelines with RTX rendering. |
+| **[Autodesk Maya](https://www.autodesk.com/products/maya/overview)** | ~$55B Market Cap / ~$5.5B Rev | $235/month or $1,875/year per user (Maya Indie available at $305/year) | 30-day full-featured free trial (1 user, full software access for 30 days; free renewable educational licenses for students/educators). | Industry-standard 3D modeling, animation, rigging, and simulation software widely used across film, television, and AAA video game production. |
+| **[Epic Games (Unreal Engine)](https://www.unrealengine.com/)** | ~$32B Valuation / ~$5.6B Rev | 5% royalty on gross lifetime revenue over $1,000,000 per title; enterprise non-game seats at $1,850/seat/year | 100% free access to all engine features and source code; zero royalties until project surpasses $1,000,000 in gross lifetime revenue. | Premier high-fidelity real-time 3D engine renowned for photorealistic rendering, Nanite virtualized geometry, Lumen lighting, and Blueprints. |
+| **[Unity](https://unity.com/)** | ~$8B Market Cap / ~$2.0B Rev | $2,040/seat/year (Unity Pro); Unity Personal is $0 | Free Personal Plan: Full engine functionality valid until individual/organization exceeds $200,000 in trailing 12-month revenue/funding. | Leading real-time engine powering mobile, desktop, VR/AR, and WebGL experiences, featuring a massive asset store and comprehensive cloud services. |
+| **[CryEngine (Crytek)](https://www.cryengine.com/)** | Privately held (~$50M–$100M Valuation / ~$30M Rev) | 5% royalty on gross revenue beyond initial threshold | 100% free full-engine access with full source code up to the first $5,000 in gross annual revenue per project royalty-free. | High-end visual fidelity real-time engine built for photorealistic graphics, physics, and performance in simulations and games. |
+| **[Blender Studio Services](https://cloud.blender.org/)** | Non-profit foundation (~€3M–€5M Annual Budget) | $17/month (€11.50/month) for individual subscription | Free Blender ID gives access to forum and community tools; core Blender 3D software is 100% free open-source with no usage or export restrictions. | Hosted training, production files, open-movie assets, and cloud collaboration services backing the open-source Blender ecosystem. |
+| **[PlayCanvas](https://playcanvas.com/)** | Subsidiary of Snap Inc. (~$15B–$20B Market Cap) | $15/month (Personal Plan) or $50/user/month (Organization Plan) | Free plan: Unlimited public projects, 1 GB account storage, unlimited public collaborators; no private projects or self-hosted builds. | Web-first collaborative WebGL/WebGPU 3D engine and browser-based real-time editor optimized for instant-loading interactive web apps. |
 
 
 
