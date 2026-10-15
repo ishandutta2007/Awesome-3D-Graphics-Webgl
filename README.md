@@ -65,7 +65,7 @@ Market structure exhibits a **dual dynamic**:
 
 ## ⚡ Open-Source GitHub Projects
 
-Curated open-source 3D rendering engines, WebGL/WebGPU libraries, and digital content creation software, sorted descending by GitHub Stars_Count:
+Curated open-source 3D rendering engines, WebGL/WebGPU libraries, and digital content creation software, sorted descending by GitHub_Stars_Count:
 
 1. **[Godot Engine](https://github.com/godotengine/godot)** [![Stars](https://img.shields.io/github/stars/godotengine/godot?style=social&color=white)](https://github.com/godotengine/godot/stargazers)  
    Feature-complete multi-platform 2D and 3D game engine with dedicated node-based architecture, GDScript, C# support, built-in visual shaders, and first-class WebGL/WebGPU browser export targets.
