@@ -8,7 +8,7 @@
 
 <p align="center">
 <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-<a href="https://github.com/ishandutta2007/Awesome-3D-Graphics-Webgl/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-3D-Graphics-Webgl?style=flat-square&logo=github&color=gold" alt="GitHub Stars"/></a>
+<a href="https://github.com/ishandutta2007/Awesome-3D-Graphics-Webgl/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-3D-Graphics-Webgl?style=flat-square&logo=github&color=gold" alt="GitHub_Stars"/></a>
 <a href="https://github.com/ishandutta2007/Awesome-3D-Graphics-Webgl/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-3D-Graphics-Webgl?style=flat-square&logo=github&color=blue" alt="GitHub Forks"/></a>
 <a href="https://github.com/ishandutta2007/Awesome-3D-Graphics-Webgl/issues"><img src="https://img.shields.io/github/issues/ishandutta2007/Awesome-3D-Graphics-Webgl?style=flat-square&color=green" alt="GitHub Issues"/></a>
 <a href="https://github.com/ishandutta2007/Awesome-3D-Graphics-Webgl/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square" alt="License"/></a>
@@ -65,7 +65,7 @@ Market structure exhibits a **dual dynamic**:
 
 ## ⚡ Open-Source GitHub Projects
 
-Curated open-source 3D rendering engines, WebGL/WebGPU libraries, and digital content creation software, sorted descending by GitHub star count:
+Curated open-source 3D rendering engines, WebGL/WebGPU libraries, and digital content creation software, sorted descending by GitHub Stars_Count:
 
 1. **[Godot Engine](https://github.com/godotengine/godot)** [![Stars](https://img.shields.io/github/stars/godotengine/godot?style=social&color=white)](https://github.com/godotengine/godot/stargazers)  
    Feature-complete multi-platform 2D and 3D game engine with dedicated node-based architecture, GDScript, C# support, built-in visual shaders, and first-class WebGL/WebGPU browser export targets.
@@ -126,7 +126,7 @@ Contributions are welcome! Please follow these guidelines:
 
 1. 🍴 Fork the repository.
 2. 🌿 Create your feature branch (`git checkout -b feature/awesome-addition`).
-3. 📝 Add your tool or library to `README.md` keeping the established format (link, star badge, and descriptive summary).
+3. 📝 Add your tool or library to `README.md` keeping the established format (link, Stars_Badge, and descriptive summary).
 4. 🚀 Open a Pull Request with a clear description of the project.
 
 ---
